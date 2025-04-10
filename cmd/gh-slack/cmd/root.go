@@ -78,6 +78,7 @@ func init() {
 	rootCmd.AddCommand(sendCmd)
 	rootCmd.AddCommand(apiCmd)
 	rootCmd.AddCommand(authCmd)
+	rootCmd.AddCommand(readChannelCmd)
 	rootCmd.PersistentFlags().BoolVarP(&verbose, "verbose", "v", false, "Show verbose debug information")
 	rootCmd.SetHelpTemplate(rootCmdUsageTemplate)
 	rootCmd.SetUsageTemplate(rootCmdUsageTemplate)
