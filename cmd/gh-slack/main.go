@@ -14,3 +14,9 @@ func main() {
 		os.Exit(1)
 	}
 }
+
+// In the function where commands are added (location may vary):
+rootCmd.AddCommand(
+    // ...existing commands...
+    commands.ReadChannelCmd(),
+)
